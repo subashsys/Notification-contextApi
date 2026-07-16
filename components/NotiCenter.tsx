@@ -1,13 +1,13 @@
 "use client";
 
 import { NotificationType } from "@/context/NotificationContext";
-import { useNotify } from "@/hooks/UseNotify";
+import { useNotify } from "@/hooks/useNotify";
 
 function NotiCenter() {
   const { notification, showNotification } = useNotify();
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200 p-6">
+    <div className="flex min-h-screen items-center justify-center bg-linear-to-br from-slate-100 to-slate-200 p-6">
       <div className="w-full max-w-lg rounded-2xl bg-white p-8 shadow-2xl">
         <h1 className="mb-6 text-center text-3xl font-bold text-slate-800">
           Notification Center
